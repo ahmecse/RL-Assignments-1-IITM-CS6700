@@ -75,40 +75,12 @@ The assignment involves the following core tasks:
     *   Generate a heatmap of final Q-values and visualize the optimal policy (mean).
 5.  **Reporting:** Provide a detailed comparison of the policies learned by SARSA and Q-Learning for each experiment, including justifications for hyperparameter choices and the observed behaviors.
 
-## How to Run
-
-*(Detailed instructions specific to this project should be added here. This typically includes:)*
-
-1.  **Clone the repository:**
-    ```bash
-    git clone <repository-url>
-    cd <repository-directory>
-    ```
-2.  **Set up environment (if necessary):**
-    ```bash
-    # e.g., using pip
-    pip install -r requirements.txt
-    ```
-3.  **Run experiments:**
-    ```bash
-    # Example command structure (modify as needed)
-    python experiments/run_experiment.py --algorithm sarsa --start_state 0,4 --p 1.0 --wind false
-    python experiments/run_experiment.py --algorithm q_learning --start_state 3,6 --p 0.7 --wind false
-    # ... run all 12 configurations
-    ```
-4.  **Generate plots and report:**
-    ```bash
-    # Example command (modify as needed)
-    python src/utils.py --generate_plots --generate_report
-    ```
 
 ## Results
 
-*(This section should summarize the key findings from the experiments and analysis. Include links to the final report PDF and potentially showcase some key plots or heatmaps comparing SARSA and Q-Learning performance across different environment variants.)*
+Example: "The final Notebook.ipynbcomparing SARSA and Q-Learning performance can be found in `results`. Q-Learning generally converged faster in deterministic settings, while SARSA exhibited safer exploration patterns in stochastic environments..."
 
-Example: "The final report comparing SARSA and Q-Learning performance can be found in `results/report/CS6700_PA1_Report.pdf`. Q-Learning generally converged faster in deterministic settings, while SARSA exhibited safer exploration patterns in stochastic environments..."
-
-## Suggested Repository Structure
+## Repository Structure
 
 ```
 .
@@ -131,14 +103,6 @@ Example: "The final report comparing SARSA and Q-Learning performance can be fou
 │   └── report/           # Final report.
 │       └── CS6700_PA1_Report.pdf
 └── notebooks/          # Jupyter notebooks for exploration or visualization (optional).
-    └── analysis.ipynb
+    └── Notebook.ipynb
 ```
 
-This structure separates core algorithm implementations (`src/`), experiment execution logic (`experiments/`), and generated outputs (`results/`), promoting modularity and clarity.
-
-## Dependencies
-
-*   Python 3.x
-*   NumPy
-*   Matplotlib
-*   (Add any other specific libraries used, e.g., `seaborn` for heatmaps)
