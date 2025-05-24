@@ -2,23 +2,30 @@
 
 This repository contains the implementation for Programming Assignment 1 of the CS6700: Reinforcement Learning course (Jan-May 2024). The assignment focuses on implementing, comparing, and analyzing two fundamental Temporal Difference (TD) learning algorithms, SARSA and Q-Learning, within a custom Grid World environment.
 
+![Report Organization](https://github.com/ahmecse/RL-Assignments-1-IITM-CS6700/blob/main/Images/The%20report%20can%20be%20organized.png?raw=true)
+
 ## Environment Description
 
 The agent operates within a 10x10 Grid World designed for this assignment. Key characteristics include:
 
-*   **Actions:** The agent can choose one of four deterministic actions: `up`, `down`, `left`, `right`.
-*   **Transitions:** Action outcomes can be stochastic based on parameters `p` and `b`. The agent moves in the intended direction (North) with probability `p`. With probability `(1-p)*b`, it moves West relative to the intended direction, and with probability `(1-p)*(1-b)`, it moves East.
-*   **Wind:** An optional wind effect can push the agent one cell to the right with a probability of 0.4 after its initial move.
-*   **States:** The grid contains several types of states:
-    *   **Start State:** The agent's initial position (fixed per experiment, e.g., (0, 4) or (3, 6)).
-    *   **Goal States:** Target states (3 total). Reaching a goal yields a reward of +10.
-    *   **Obstructed States:** Walls that block movement; transitions into these result in no state change.
-    *   **Bad States:** Entering incurs a penalty of -6.
-    *   **Restart States:** Entering incurs a high penalty of -100 and teleports the agent back to the start state without ending the episode.
-    *   **Normal States:** All other states, incurring a penalty of -1 upon entry.
-*   **Episode Termination:** An episode ends when the agent reaches a goal state or exceeds 100 timesteps.
-*   **Boundary Conditions:** Attempting to move off the grid results in no change in state.
-*   **Rewards:** +10 (Goal), -1 (Normal), -6 (Bad), -100 (Restart).
+![Grid Example](https://github.com/ahmecse/RL-Assignments-1-IITM-CS6700/blob/main/Images/An%20example%20grid%20with%20start%20point%20at%20(0%2C4).png?raw=true)
+
+* **Actions:** The agent can choose one of four deterministic actions: `up`, `down`, `left`, `right`.
+* **Transitions:** Action outcomes can be stochastic based on parameters `p` and `b`. The agent moves in the intended direction (North) with probability `p`. With probability `(1-p)*b`, it moves West relative to the intended direction, and with probability `(1-p)*(1-b)`, it moves East.
+* **Wind:** An optional wind effect can push the agent one cell to the right with a probability of 0.4 after its initial move.
+* **States:** The grid contains several types of states:
+  * **Start State:** The agent's initial position (fixed per experiment, e.g., (0, 4) or (3, 6)).
+  * **Goal States:** Target states (3 total). Reaching a goal yields a reward of +10.
+  * **Obstructed States:** Walls that block movement; transitions into these result in no state change.
+  * **Bad States:** Entering incurs a penalty of -6.
+  * **Restart States:** Entering incurs a high penalty of -100 and teleports the agent back to the start state without ending the episode.
+  * **Normal States:** All other states, incurring a penalty of -1 upon entry.
+* **Episode Termination:** An episode ends when the agent reaches a goal state or exceeds 100 timesteps.
+* **Boundary Conditions:** Attempting to move off the grid results in no change in state.
+* **Rewards:** +10 (Goal), -1 (Normal), -6 (Bad), -100 (Restart).
+
+![Action Directions](https://github.com/ahmecse/RL-Assignments-1-IITM-CS6700/blob/main/Images/The%20intended%20direction%20of%20the%20action%20chosen%20is%20considered%20as%20North.png?raw=true)
+
 
 ## Algorithms Implemented
 
