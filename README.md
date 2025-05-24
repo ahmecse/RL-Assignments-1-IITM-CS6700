@@ -13,6 +13,21 @@ This repository contains the implementation for Programming Assignment 1 of the 
 
 ![Report Organization](Images/The%20report%20can%20be%20organized.png)
 
+
+## Table of Contents
+
+1. [Environment Description](#environment-description)  
+2. [Algorithms Implemented](#algorithms-implemented)  
+   1. [SARSA (On‐Policy TD)](#sarsa-on‐policy-td)  
+   2. [Q-Learning (Off-Policy TD)](#q-learning-off-policy-td)  
+3. [Tasks & Experiments](#tasks--experiments)  
+4. [How to Run](#how-to-run)  
+5. [Results](#results)  
+6. [Repository Structure](#repository-structure)  
+7. [Dependencies](#dependencies)  
+8. [License](#license)
+   
+
 ## Environment Description
 
 The agent operates within a 10x10 Grid World designed for this assignment. Key characteristics include:
@@ -163,18 +178,3 @@ You can directly link to these plots in discussions. For example:
 │       └── grid_world.pdf
 └── requirements.txt        # Project dependencies.
 ```
-
-## Dependencies
-
-*   Python 3.x
-*   NumPy
-*   Matplotlib
-*   tqdm
-*   IPython (for running the notebook)
-
-Install dependencies using: `pip install -r requirements.txt`
-
-## License
-
-This project is subject to the academic policies of the CS6700 course. Please refer to course guidelines regarding code usage and sharing.
-
