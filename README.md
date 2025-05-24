@@ -7,25 +7,10 @@
 [![PyTorch](https://img.shields.io/badge/pytorch-1.13+-red.svg)](https://pytorch.org/)
 [![tqdm](https://img.shields.io/badge/tqdm-progress--bar-lightgrey.svg)](https://pypi.org/project/tqdm/)
 
----
-
 This repository contains the implementation for Programming Assignment 1 of the CS6700: Reinforcement Learning course (Jan-May 2024). The assignment focuses on implementing, comparing, and analyzing two fundamental Temporal Difference (TD) learning algorithms, SARSA and Q-Learning, within a custom Grid World environment.
 
 ![Report Organization](Images/The%20report%20can%20be%20organized.png)
 
-
-## Table of Contents
-
-1. [Environment Description](#environment-description)  
-2. [Algorithms Implemented](#algorithms-implemented)  
-   1. [SARSA (On‐Policy TD)](#sarsa-on‐policy-td)  
-   2. [Q-Learning (Off-Policy TD)](#q-learning-off-policy-td)  
-3. [Tasks & Experiments](#tasks--experiments)  
-4. [How to Run](#how-to-run)  
-5. [Results](#results)  
-6. [Repository Structure](#repository-structure)  
-
-   
 ## Environment Description
 
 The agent operates within a 10x10 Grid World designed for this assignment. Key characteristics include:
@@ -138,19 +123,26 @@ The subdirectories are named using a four-part code: `X.Y.Z.W`, corresponding to
 *   `state_visits.pdf`: Heatmap of state visit counts during training.
 *   `steps.pdf`: Plot of steps taken per episode (mean/std dev over runs).
 
-### Linking to Results
+### Example Results
 
+Here are some example plots corresponding to specific experiments:
 
-- **SARSA vs Q-Learning (deterministic, no wind, start (0,4), Softmax):**  
-  [SARSA Rewards (PDF)](Results/5K-episodes/1.1.1.1/reward.pdf) |  
-  [Q-Learning Rewards (PDF)](Results/5K-episodes/1.1.2.1/reward.pdf)
+*   **SARSA vs Q-Learning Rewards (Deterministic, No Wind, Start (0,4), Softmax):**
+    *   SARSA:
+        ![SARSA Rewards](https://raw.githubusercontent.com/ahmecse/RL-Assignments-1-IITM-CS6700/main/png_results/SARSA_Det_NoWind_Start04_Softmax_Rewards.png)
+    *   Q-Learning:
+        ![Q-Learning Rewards](https://raw.githubusercontent.com/ahmecse/RL-Assignments-1-IITM-CS6700/main/png_results/QLearning_Det_NoWind_Start04_Softmax_Rewards.png)
 
-- **Optimal Path (Q-Learning, ε-Greedy, windy, start (3,6)):**  
-  [Optimal Path (PDF)](Results/5K-episodes/3.2.2.2/optimal_path.pdf)
+*   **Optimal Path (Q-Learning, ε-Greedy, Windy, Start (3,6)):**
+    ![Optimal Path](https://raw.githubusercontent.com/ahmecse/RL-Assignments-1-IITM-CS6700/main/png_results/QLearning_Windy_Det_Start36_EpsilonGreedy_OptimalPath.png)
 
-- **State Visits (SARSA, ε-Greedy, stochastic, start (3,6)):**  
-  [SARSA Visits (PDF)](Results/5K-episodes/2.2.1.2/state_visits.pdf)
+*   **State Visits (Stochastic, No Wind, Start (3,6), ε-Greedy):**
+    *   SARSA:
+        ![SARSA Visits](https://raw.githubusercontent.com/ahmecse/RL-Assignments-1-IITM-CS6700/main/png_results/SARSA_Stochastic_NoWind_Start36_EpsilonGreedy_StateVisits.png)
+    *   Q-Learning:
+        ![Q-Learning Visits](https://raw.githubusercontent.com/ahmecse/RL-Assignments-1-IITM-CS6700/main/png_results/QLearning_Stochastic_NoWind_Start36_EpsilonGreedy_StateVisits.png)
 
+*Note: The full set of plots for all 12 experiments can be found in the `Results/5K-episodes/` directory as PDF files.*
 
 ## Repository Structure
 
@@ -182,3 +174,4 @@ The subdirectories are named using a four-part code: `X.Y.Z.W`, corresponding to
 │       └── grid_world.pdf
 └── requirements.txt        # Project dependencies.
 ```
+
