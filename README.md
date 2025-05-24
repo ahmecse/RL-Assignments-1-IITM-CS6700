@@ -24,10 +24,8 @@ This repository contains the implementation for Programming Assignment 1 of the 
 4. [How to Run](#how-to-run)  
 5. [Results](#results)  
 6. [Repository Structure](#repository-structure)  
-7. [Dependencies](#dependencies)  
-8. [License](#license)
-   
 
+   
 ## Environment Description
 
 The agent operates within a 10x10 Grid World designed for this assignment. Key characteristics include:
@@ -142,11 +140,17 @@ The subdirectories are named using a four-part code: `X.Y.Z.W`, corresponding to
 
 ### Linking to Results
 
-You can directly link to these plots in discussions. For example:
 
-*   Comparing SARSA and Q-Learning reward curves in the deterministic, non-windy environment starting at (0,4) with Softmax: [SARSA Rewards](Results/5K-episodes/1.1.1.1/reward.pdf), [Q-Learning Rewards](Results/5K-episodes/1.1.2.1/reward.pdf).
-*   Viewing the optimal path for Q-Learning (Epsilon-Greedy) in the windy environment starting at (3,6): [View Path](Results/5K-episodes/3.2.2.2/optimal_path.pdf).
-*   Examining state visits for SARSA (Epsilon-Greedy) in the stochastic environment starting at (3,6): [SARSA Visits](Results/5K-episodes/2.2.1.2/state_visits.pdf).
+- **SARSA vs Q-Learning (deterministic, no wind, start (0,4), Softmax):**  
+  [SARSA Rewards (PDF)](Results/5K-episodes/1.1.1.1/reward.pdf) |  
+  [Q-Learning Rewards (PDF)](Results/5K-episodes/1.1.2.1/reward.pdf)
+
+- **Optimal Path (Q-Learning, ε-Greedy, windy, start (3,6)):**  
+  [Optimal Path (PDF)](Results/5K-episodes/3.2.2.2/optimal_path.pdf)
+
+- **State Visits (SARSA, ε-Greedy, stochastic, start (3,6)):**  
+  [SARSA Visits (PDF)](Results/5K-episodes/2.2.1.2/state_visits.pdf)
+
 
 ## Repository Structure
 
