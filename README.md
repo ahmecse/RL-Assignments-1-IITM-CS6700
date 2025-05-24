@@ -135,37 +135,3 @@ This structure separates core algorithm implementations (`src/`), experiment exe
 *   NumPy
 *   Matplotlib
 *   (Add any other specific libraries used, e.g., `seaborn` for heatmaps)
-
-## Contributing
-
-Contributions to improve the implementation, add analysis, or enhance documentation are welcome. Please follow standard fork-and-pull-request workflows.
-
-## License
-
-This project is likely subject to the academic policies of the CS6700 course. If intended for public distribution beyond the course requirements, consider adding an open-source license like MIT.
-
-```
-# Placeholder for MIT License text if applicable
-MIT License
-
-Copyright (c) [Year] [Your Name/Team Name]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
